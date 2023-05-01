@@ -62,7 +62,7 @@ class HTTPHandler(BaseHTTPRequestHandler):
 
 
 def run(server=HTTPServer, handler=HTTPHandler):
-    address = ('', 30000)
+    address = ('', 3000)
     http_server = server(address, handler)
     try:
         http_server.serve_forever()
